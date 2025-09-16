@@ -1,0 +1,8 @@
+emagreca-sem-sofrimento/
+│
+├── index.html           ← Página principal (landing page)
+├── obrigado.html        ← Página de entrega do ebook
+├── style.css            ← Estilo completo com fundo de receitas
+└── assets/
+    ├── ebook.pdf        ← Seu PDF do ebook
+    └── capa-ebook.jpg   ← Capa do ebook (opcional)

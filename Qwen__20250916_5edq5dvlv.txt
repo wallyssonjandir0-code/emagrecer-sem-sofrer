@@ -1,0 +1,9 @@
+emagreca-sem-sofrimento/
+│
+├── index.html
+├── obrigado.html
+├── style.css
+├── script.js
+└── assets/
+    ├── ebook.pdf          ← (Você gera a partir do ebook/index.html)
+    └── capa-ebook.jpg     ← (Print da capa ou imagem real)

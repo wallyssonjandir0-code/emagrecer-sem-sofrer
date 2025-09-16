@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emagreça Sem Sofrimento - Ebook</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fafafa;
+        }
+
+        .capa-ebook {
+            width: 100%;
+            height: auto;
+            min-height: 600px;
+            background: linear-gradient(135deg, #2e7d32, #4caf50);
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+            color: white;
+            background-image: url('https://images.unsplash.com/photo-1507696767559-3e4993630044?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+        }
+
+        .capa-ebook::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(46, 125, 50, 0.9), rgba(76, 175, 80, 0.85));
+            z-index: 1;
+        }
+
+        .conteudo-capa {
+            position: relative;
+            z-index: 2;
+            max-width: 90%;
+        }
+
+        .selo {
+            background: #ff6b6b;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .titulo-principal {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin: 0 0 25px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            letter-spacing: -0.5px;
+        }
+
+        .subtitulo {
+            font-size: 1.4rem;
+            font-weight: 300;
+            margin: 0 0 40px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            max-width: 600px;
+        }
+
+        .autor {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-top: 25px;
+            border-top: 2px solid rgba(255,255,255,0.3);
+            padding-top: 20px;
+            font-weight: 500;
+        }
+
+        .garantia-selo {
+            background: #FFD700;
+            color: #333;
+            padding: 8px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 30px;
+            display: inline-block;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .icone {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+        }
+
+        /* ESTILO DO RESTANTE DO EBOOK */
+        .pagina {
+            background: white;
+            padding: 35px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #2e7d32;
+            border-bottom: 3px solid #81C784;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin: 20px 0;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .bonus {
+            background: #FFF8E1;
+            border-left: 6px solid #FFC107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .garantia {
+            background: #E8F5E8;
+            border-left: 6px solid #4CAF50;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        @media print {
+            body { background: white; }
+            .capa-ebook { page-break-after: always; }
+            .pagina { page-break-inside: avoid; margin: 15px 0; }
+        }
+
+        @media (max-width: 768px) {
+            .titulo-principal { font-size: 2.2rem; }
+            .subtitulo { font-size: 1.2rem; }
+            .capa-ebook { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CAPA NOVA INTEGRADA -->
+    <div class="capa-ebook">
+        <div class="conteudo-capa">
+            <div class="selo">🔥 MAIS DE 10.000 TRANSFORMAÇÕES!</div>
+
+            <div class="icone">💪</div>
+
+            <h1 class="titulo-principal">EMAGREÇA SEM SOFRIMENTO</h1>
+
+            <h2 class="subtitulo">O Guia Definitivo para Perder Peso de Forma Saudável, Sustentável e sem Rebote — Mesmo se Você Já Tentou de Tudo</h2>
+
+            <div class="autor">Por [Seu Nome ou Pseudônimo]<br><small>Nutricionista Funcional & Coach de Emagrecimento</small></div>
+
+            <div class="garantia-selo">✅ GARANTIA DE 7 DIAS</div>
+        </div>
+    </div>
+
+    <!-- OFERTA ESPECIAL -->
+    <div class="pagina" style="text-align: center; background: #FFF3E0; border: 2px dashed #FFB74D;">
+        <h2>🎁 OFERTA ESPECIAL PARA VOCÊ!</h2>
+        <p style="font-size: 1.2rem; margin: 20px 0;">Este guia já transformou a vida de mais de 10.000 pessoas. Você está a um passo de descobrir como emagrecer sem dietas malucas, sem passar fome e sem o efeito sanfona.</p>
+        <p style="font-size: 1.3rem; font-weight: bold; color: #d32f2f;">Prepare-se. Sua transformação começa AGORA.</p>
+    </div>
+
+    <!-- ÍNDICE -->
+    <div class="pagina">
+        <h2>📌 ÍNDICE</h2>
+        <ol>
+            <li><a href="#cap1">Por que você NUNCA conseguiu emagrecer de verdade?</a></li>
+            <li><a href="#cap2">Os 5 Mitos do Emagrecimento que te sabotam</a></li>
+            <li><a href="#cap3">Como Funciona o Seu Metabolismo</a></li>
+            <li><a href="#cap4">O Poder dos Alimentos Termogênicos e Sacietógenos</a></li>
+            <li><a href="#cap5">Plano Alimentar de 7 Dias (sem passar fome!)</a></li>
+            <li><a href="#cap6">Os 3 Pilares do Emagrecimento Sustentável</a></li>
+            <li><a href="#cap7">Treinos Rápidos e Eficientes</a></li>
+            <li><a href="#cap8">Controle Emocional e Ansiedade por Comida</a></li>
+            <li><a href="#cap9">Suplementos: o que funciona (e o que é golpe)</a></li>
+            <li><a href="#cap10">Como Montar Seu Plano de Manutenção</a></li>
+            <li><a href="#bonus">🎁 BÔNUS EXCLUSIVOS</a></li>
+            <li><a href="#garantia">✅ GARANTIA INCONDICIONAL</a></li>
+        </ol>
+    </div>
+
+    <!-- CAPÍTULOS -->
+    <div class="pagina" id="cap1">
+        <h2>1. Por que você NUNCA conseguiu emagrecer de verdade?</h2>
+        <p>A resposta não está na sua força de vontade — está na sua estratégia. A maioria das dietas falha porque são temporárias, restritivas e não respeitam o funcionamento do seu corpo.</p>
+        <p>Você já parou para pensar que talvez não seja culpa sua? O problema está nas informações erradas que você recebeu: dietas da moda, jejuns extremos, cortes radicais... Tudo isso desregula seu metabolismo e te leva de volta ao ponto inicial — ou pior.</p>
+        <p>Neste capítulo, você vai descobrir as 3 razões científicas pelas quais você engorda mesmo se esforçando — e como corrigi-las de forma definitiva.</p>
+    </div>
+
+    <div class="pagina" id="cap2">
+        <h2>2. Os 5 Mitos do Emagrecimento que te sabotam</h2>
+        <ol>
+            <li><strong>“Tem que passar fome para emagrecer”</strong> → FALSO. Estudos mostram que quem come de forma estratégica perde mais gordura e mantém o resultado. Fome = estresse = cortisol = gordura abdominal.</li>
+            <li><strong>“Carboidrato engorda”</strong> → DEPENDE. Carboidratos integrais, consumidos no momento certo, aceleram o metabolismo. O vilão é o carboidrato refinado + sedentarismo.</li>
+            <li><strong>“Tem que treinar 1h por dia”</strong> → MITO. Treinos curtos de alta intensidade (HIIT) de 20 minutos, 3x por semana, são mais eficazes que horas na esteira.</li>
+            <li><strong>“Suplementos milagrosos funcionam”</strong> → QUASE SEMPRE GOLPE. 95% dos suplementos de emagrecimento não têm comprovação científica. Você só precisa de 3 — e vou te mostrar quais.</li>
+            <li><strong>“Se não der certo na primeira semana, não vai dar certo”</strong> → ERRADO. O corpo leva de 14 a 21 dias para se adaptar. Resultados reais vêm com consistência, não velocidade.</li>
+        </ol>
+    </div>
+
+    <div class="pagina" id="cap3">
+        <h2>3. Como Funciona o Seu Metabolismo (e como acelerá-lo naturalmente)</h2>
+        <p>Seu metabolismo é como um motor biológico. Quando está desregulado, nada do que você fizer vai funcionar direito. Mas a boa notícia? Você pode reprogramá-lo.</p>
+        <p><strong>As 4 chaves para reativar seu metabolismo:</strong></p>
+        <ul>
+            <li><strong>Hidratação estratégica:</strong> 500ml de água ao acordar aumenta o metabolismo em 24% nas próximas 90 minutos (estudo da Universidade de Berlim).</li>
+            <li><strong>Proteína em todas as refeições:</strong> Tem efeito termogênico — seu corpo gasta mais energia para digeri-la.</li>
+            <li><strong>Jejum intermitente inteligente:</strong> Não é para todos! Ensino qual protocolo usar conforme seu perfil hormonal.</li>
+            <li><strong>Sono de qualidade > treino intenso:</strong> Dormir mal aumenta grelina (hormônio da fome) e reduz leptina (hormônio da saciedade).</li>
+        </ul>
+        <p>Com essas estratégias, você transforma seu corpo de “modo economia” para “modo queima” — naturalmente.</p>
+    </div>
+
+    <!-- CONTINUE OS CAPÍTULOS... -->
+
+    <div class="pagina" id="cap10">
+        <h2>10. Como Montar Seu Plano de Manutenção (para NUNCA mais engordar)</h2>
+        <p>Emagrecer é fácil. Manter é o desafio. Aqui está o sistema em 3 etapas que meus alunos usam para manter o resultado para sempre:</p>
+        <ol>
+            <li><strong>Reeducação de paladar (21 dias):</strong> Treinar seu cérebro para preferir alimentos naturais — sem sofrimento.</li>
+            <li><strong>Ciclo de recompensa sem culpa (1x por semana):</strong> Um “dia livre” estrategicamente planejado para evitar a sensação de privação.</li>
+            <li><strong>Check-up mensal de medidas (não só peso!):</strong> Acompanhar circunferência abdominal, energia, sono e humor — indicadores reais de saúde.</li>
+        </ol>
+        <p>Quando você entende que emagrecimento é estilo de vida — não dieta — o resultado se torna permanente.</p>
+    </div>
+
+    <!-- BÔNUS -->
+    <div class="pagina bonus" id="bonus">
+        <h2>🎁 BÔNUS EXCLUSIVOS (SÓ HOJE!)</h2>
+        <ul>
+            <li>📥 <strong>Checklist Diário de Hábitos Emagrecedores (PDF):</strong> Cole na geladeira e siga passo a passo.</li>
+            <li>📹 <strong>Aula Bônus: “Como Montar Seu Prato Ideal em 5 Minutos” (Vídeo):</strong> Método visual infalível para nunca mais errar na proporção.</li>
+            <li>📅 <strong>Planner de 30 Dias com Metas e Controle de Humor Alimentar:</strong> Para identificar gatilhos emocionais e substituí-los.</li>
+            <li>💬 <strong>Grupo VIP de Suporte no Telegram (somente para compradores):</strong> Tire dúvidas e compartilhe vitórias com quem está no mesmo caminho.</li>
+        </ul>
+    </div>
+
+    <!-- GARANTIA -->
+    <div class="pagina garantia" id="garantia">
+        <h2>✅ GARANTIA INCONDICIONAL DE 7 DIAS</h2>
+        <p>Se em 7 dias você não vir resultados ou não gostar do material, é só pedir seu dinheiro de volta. Sem perguntas, sem burocracia.</p>
+        <p>Você não tem nada a perder — e tudo a ganhar.</p>
+        <p style="font-weight: bold; color: #d32f2f; margin-top: 15px;">Isso mesmo: RISCO ZERO.</p>
+    </div>
+
+    <!-- PÁGINA FINAL -->
+    <div class="pagina" style="text-align: center; background: #E8F5E8;">
+        <h2>Obrigado por confiar em mim!</h2>
+        <p style="font-size: 1.2rem; margin: 25px 0;">Seu corpo saudável e sua autoestima elevada são minha maior recompensa.</p>
+        <p style="font-size: 1.3rem;"><strong>Com carinho,</strong><br>[Seu Nome]</p>
+        <img src="https://via.placeholder.com/100x100/4CAF50/FFFFFF?text=Foto" alt="Foto do Autor" style="width: 100px; height: 100px; border-radius: 50%; margin-top: 20px; border: 3px solid white; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    </div>
+
+</body>
+</html>

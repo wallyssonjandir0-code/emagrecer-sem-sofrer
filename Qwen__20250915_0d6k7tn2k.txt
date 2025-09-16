@@ -1,0 +1,16 @@
+Emagrecimento-Ebook-Site/
+│
+├── ebook/
+│   └── index.html
+│
+├── site-venda/
+│   ├── index.html
+│   ├── obrigado.html
+│   ├── style.css
+│   └── script.js
+│
+└── assets/
+    ├── ebook.pdf
+    ├── capa-ebook.jpg
+    ├── depoimento1.jpg
+    └── depoimento2.jpg
